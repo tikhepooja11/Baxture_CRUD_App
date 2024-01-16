@@ -67,5 +67,17 @@ Bonus Points ->
       7.3  Sending created record on ListUserById
       7.4  Deleting a created object with confirmation of successful deletion by sending status code - 204 No content 
       7.5  Handled ListUser with the deleted user ID does not exist
-     
+
+
+     Few Snapshots ->
+
+     ![Screenshot (76)](https://github.com/tikhepooja11/Baxture_CRUD_App/assets/47672660/cc595d38-23f1-48b4-9ded-6aae1e133bb7)
+
+     ![Screenshot (75)](https://github.com/tikhepooja11/Baxture_CRUD_App/assets/47672660/8c4ea0f7-ce71-41c2-b414-923204ef0c86)
+
+     ![Screenshot (77)](https://github.com/tikhepooja11/Baxture_CRUD_App/assets/47672660/483313f7-b6e2-40c5-b848-63df23b9cdca)
+
+     ![Screenshot (78)](https://github.com/tikhepooja11/Baxture_CRUD_App/assets/47672660/d9034723-3086-4f24-91dc-0a7145e54a80)
+
+
      
