@@ -62,10 +62,10 @@ Bonus Points ->
 
 7.   There could be some tests for API (not less than 3 scenarios). Example of test scenario: completed
    
-7.1  Sending empty array if no user in list on listing all users.
-7.2  Sending newly created user record on user creation
-7.3  Sending created record on ListUserById
-7.4  Deleting a created object with confirmation of successful deletion by sending status code - 204 No content 
-7.5  Handled ListUser with the deleted user ID does not exist
+      7.1  Sending empty array if no user in list on listing all users.
+      7.2  Sending newly created user record on user creation
+      7.3  Sending created record on ListUserById
+      7.4  Deleting a created object with confirmation of successful deletion by sending status code - 204 No content 
+      7.5  Handled ListUser with the deleted user ID does not exist
      
      
