@@ -68,10 +68,21 @@
       ]
     },
     {
+      "name": "ListAllUsers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/userRoute/users"
+      },
+      "response": [[]],
+      "status": 200
+    },
+    {
       "name": "ListUserById",
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc026"
       },
       "response": [
         {
@@ -81,13 +92,15 @@
           "hobbies": ["coding"],
           "__v": 0
         }
-      ]
+      ],
+      "status": 200
     },
     {
       "name": "UpdateUserById",
       "request": {
         "method": "GET",
         "header": [],
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc026",
         "body": [
           {
             "age": "24"
@@ -102,15 +115,146 @@
           "hobbies": ["coding"],
           "__v": 0
         }
+      ],
+      "status": 200
+    },
+    {
+      "name": "DeleteUser",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc0261"
+      },
+      "response": [
+        {
+          "message": "Invalid userId format :  Please enter valid userId",
+          "status": 400
+        }
       ]
     },
     {
       "name": "DeleteUser",
       "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc027"
+      },
+      "response": [
+        {
+          "message": "User with this id does not exist",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "name": "DeleteUser",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc026"
+      },
+      "response": [],
+      "status": 204
+    },
+    {
+      "name": "CreateUser",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:3000/userRoute/user",
+        "body": [
+          {
+            "username": "Nikhil Tikhe",
+            "hobbies": ["singing"]
+          }
+        ]
+      },
+      "response": [
+        {
+          "message": "User cannot be created. User validation failed: age: Path `age` is required.",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "name": "ListAllUsers",
+      "request": {
         "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/userRoute/users"
+      },
+      "response": [
+        {
+          "message": "Oops! Something went wrong on our end. Our team has been notified, and we're working to fix it. Please try again later or contact support if the issue persists.",
+          "status": 500
+        }
+      ]
+    },
+    {
+      "name": "ListUserById",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc0261",
         "header": []
       },
-      "response": []
+      "response": [
+        {
+          "message": "Invalid userId format :  Please enter valid userId",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "name": "ListUserById",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc027",
+        "header": []
+      },
+      "response": [
+        {
+          "message": "User with this id does not exist",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "name": "UpdateUserById",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc0261",
+        "body": [
+          {
+            "age": "24"
+          }
+        ]
+      },
+      "response": [
+        {
+          "message": "Invalid userId format :  Please enter valid userId"
+        }
+      ],
+      "status": 400
+    },
+    {
+      "name": "UpdateUserById",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": "http://localhost:3000/userRoute/users/65a6910c640828a27cbfc025",
+        "body": [
+          {
+            "age": "24"
+          }
+        ]
+      },
+      "response": [
+        {
+          "message": "User with this id does not exist"
+        }
+      ],
+      "status": 404
     }
   ]
 }
