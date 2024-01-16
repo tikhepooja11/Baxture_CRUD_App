@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "1575cdaa-39e3-44a6-a57b-4d35f6ebd7d7",
+    "name": "Baxture_CRUD_App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19903447"
+  },
+  "item": [
+    {
+      "name": "Api_Healthcheck",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": ["api working"]
+    },
+    {
+      "name": "CreateUser",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": [
+          {
+            "username": "Sushant Tikhe",
+            "age": "35",
+            "hobbies": ["Playing", "singing", "dancing"]
+          }
+        ]
+      },
+      "response": [
+        {
+          "username": "Sushant Tikhe",
+          "age": 35,
+          "hobbies": ["Playing", "singing", "dancing"],
+          "_id": "65a694bb640828a27cbfc02c",
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "name": "ListAllUsers",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "_id": "65a6910c640828a27cbfc026",
+          "username": "Pooja Tikhe",
+          "age": 25,
+          "hobbies": ["coding"],
+          "__v": 0
+        },
+        {
+          "_id": "65a6949a640828a27cbfc02a",
+          "username": "Aarti Tikhe",
+          "age": 20,
+          "hobbies": ["coding", "gaming"],
+          "__v": 0
+        },
+        {
+          "_id": "65a694bb640828a27cbfc02c",
+          "username": "Sushant Tikhe",
+          "age": 35,
+          "hobbies": ["Playing", "singing", "dancing"],
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "name": "ListUserById",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "_id": "65a6910c640828a27cbfc026",
+          "username": "Pooja Tikhe",
+          "age": 25,
+          "hobbies": ["coding"],
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "name": "UpdateUserById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": [
+          {
+            "age": "24"
+          }
+        ]
+      },
+      "response": [
+        {
+          "_id": "65a6910c640828a27cbfc026",
+          "username": "Pooja Tikhe",
+          "age": 24,
+          "hobbies": ["coding"],
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "name": "DeleteUser",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

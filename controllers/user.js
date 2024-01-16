@@ -24,13 +24,7 @@ const ListAllUsers = async (req, res) => {
   console.log("inside ListAllUsers() : ");
   try {
     const userList = await userModel.find();
-    if (userList.length === 0) {
-      const error = new Error("User list is empty");
-      error.status = 404;
-      throw error;
-    } else {
-      res.status(200).send(userList);
-    }
+    res.status(200).send(userList);
   } catch (error) {
     console.error("Error in ListAllUsers:", error);
     if (!error.status || error.status === 500) {
@@ -38,8 +32,6 @@ const ListAllUsers = async (req, res) => {
         message:
           "Oops! Something went wrong on our end. Our team has been notified, and we're working to fix it. Please try again later or contact support if the issue persists.",
       });
-    } else if (error.status === 404) {
-      res.status(404).json({ message: error.message });
     }
   }
 };
