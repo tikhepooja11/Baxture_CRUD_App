@@ -1,3 +1,12 @@
+Hello There, I have tried to complete all mandatory requirements from 1 to 5 along with Bonus points 6 & 7. I have implemented the project with mentioned technical requirements.
+
+Technical requirements
+1. Task can be implemented on Javascript or Typescript
+2. Using 18 LTS version of Node.js
+3. Asynchronous API's
+4. Upload your code to GitHub
+
+
 Implementation details ->
 1. Implemented all endpoint api/users:
       1.1 CreateUser -  POST api/users
@@ -52,10 +61,10 @@ Bonus Points ->
       application in production mode using: - npm run start:prod
 
 7.   There could be some tests for API (not less than 3 scenarios). Example of test scenario: completed
-         7.1  Sending empty array if no user in list on listing all users.
-         7.2  Sending newly created user record on user creation
-         7.3  Sending created record on ListUserById
-         7.4  Deleting a created object with confirmation of successful deletion by sending status code - 204 No content 
-         7.5  Handled ListUser with the deleted user ID does not exist
+     7.1  Sending empty array if no user in list on listing all users.
+     7.2  Sending newly created user record on user creation
+     7.3  Sending created record on ListUserById
+     7.4  Deleting a created object with confirmation of successful deletion by sending status code - 204 No content 
+     7.5  Handled ListUser with the deleted user ID does not exist
      
      
