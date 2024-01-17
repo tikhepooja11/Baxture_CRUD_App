@@ -1,10 +1,10 @@
 Hello There, I have tried to complete all mandatory requirements from 1 to 5 along with Bonus points 6 & 7. I have implemented the project with mentioned technical requirements.
 
 Technical requirements
-1. Task can be implemented on Javascript or Typescript
-2. Using 18 LTS version of Node.js
+1. Task is implemented using Javascript.
+2. Using 18 LTS version of Node.js with express.js framework
 3. Asynchronous API's
-4. Upload your code to GitHub
+4. Uploading my code to GitHub
 
 
 Implementation details ->
