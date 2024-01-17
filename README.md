@@ -1,4 +1,5 @@
 Hello There, I have tried to complete all mandatory requirements from 1 to 5 along with Bonus points 6 & 7. I have implemented the project with mentioned technical requirements.
+Important Note -> I am attaching postman collection json file in which I am adding all API's along with multiple testcases of every API -> Baxture_crud_app_postman_collection.json
 
 Technical requirements
 1. Task is implemented using Javascript.
