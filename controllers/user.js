@@ -1,4 +1,3 @@
-const { error } = require("@hapi/joi/lib/base");
 const userModel = require("../models/user");
 const mongoose = require("mongoose");
 
