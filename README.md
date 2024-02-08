@@ -1,4 +1,4 @@
-Dockerising a node js web-app ->
+Dockerising a node js web-app --->
 
 1. Installation of Docker CLI and Desktop
 2. Understanding Images v/s Containers
